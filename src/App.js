@@ -125,30 +125,39 @@ const lightDark = [
 //   );
 // }
 
+// function App() {
+//   const [color, setColor] = useState(colorData[0]);
+//   const [img, setImg] = useState();
+//   const fetchData = async () => {
+//     const data = await fetch("https://dog.ceo/api/breeds/image/random").then(
+//       (res) => res.json()
+//     );
+//     setImg(data.message);
+//   };
+//   return (
+//     <div
+//       className="App"
+//       style={{
+//         backgroundColor: color,
+//         height: "100vh",
+//         width: "100vw",
+//         display: "flex",
+//         flexDirection: "column",
+//         alignItems: "center",
+//         justifyContent: "center",
+//         gap: "1rem",
+//       }}>
+//       <button onClick={fetchData}>fetch</button>
+//       <img src={img} alt={img} />
+//     </div>
+//   );
+// }
+
 function App() {
-  const [color, setColor] = useState(colorData[0]);
-  const [img, setImg] = useState();
-  const fetchData = async () => {
-    const data = await fetch("https://dog.ceo/api/breeds/image/random").then(
-      (res) => res.json()
-    );
-    setImg(data.message);
-  };
   return (
-    <div
-      className="App"
-      style={{
-        backgroundColor: color,
-        height: "100vh",
-        width: "100vw",
-        display: "flex",
-        flexDirection: "column",
-        alignItems: "center",
-        justifyContent: "center",
-        gap: "1rem",
-      }}>
-      <button onClick={fetchData}>fetch</button>
-      <img src={img} alt={img} />
+    <div>
+      <div>Color Palate</div>
+      <div>Color Grid</div>
     </div>
   );
 }
